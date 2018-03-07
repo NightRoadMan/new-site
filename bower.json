@@ -1,0 +1,29 @@
+{
+  "name": "night",
+  "description": "",
+  "main": "",
+  "authors": [
+    "NightRoadMan <33252789+NightRoadMan@users.noreply.github.com>"
+  ],
+  "license": "ISC",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "./dist/js/bootstrap.min.js",
+        "./dist/css/bootstrap.min.css"
+      ]
+    }
+  },
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1"
+  }
+}
