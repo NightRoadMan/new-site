@@ -1,10 +1,18 @@
-$green: #81bb4a;
-
 body {
-  background: $green;
-  color: $green;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
-p {
-  color: white;
+/*Спецификация*/
+
+* {
+  box-sizing: border-box;
+}
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
 }
