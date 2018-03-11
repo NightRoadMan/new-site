@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 20px;
 }
 
 /*Спецификация*/
@@ -15,4 +16,71 @@ ul, li {
   display: block;
   padding: 0;
   margin: 0;
+}
+
+$black: #26272d;
+$blue: #267df4;
+$grey: #9f9fa1;
+$dark-blue: #2046af;
+
+
+//Стилизация главного меню
+.first-screen-section {
+  background: #eef0f3 url("../img/mainbg.jpg") center top;
+  background-size: cover;
+}
+
+.main-menu_item {
+  font-size: 16px;
+  margin: 0 40px 0 0;
+  padding: 0;
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.main-menu_item:last-child {
+  margin: 0;
+}
+
+.main-menu_item {
+  a {
+    &:hover {
+      color: $grey;
+    }
+  }
+}
+
+.button-blue {
+  font-size: 16px;
+  padding: 10px 20px;
+  background: $blue;
+  border-radius: 60px;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.button-blue:hover {
+  background: $dark-blue;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+
+.button-apple {
+  margin-top: -10px;
+}
+
+.logo-main {
+  margin-top: 52px;
+}
+.fa-apple {
+  margin-right: 14px;
+  font-size: 20px;
+  margin-top: -8px;
+}
+
+.main-menu-tour {
+  margin-top: 45px;
 }
