@@ -20,14 +20,17 @@ ul, li {
 
 $black: #26272d;
 $blue: #267df4;
-$grey: #9f9fa1;
+$grey: #8c8f94;
 $dark-blue: #2046af;
-
+$light-gray: #dbddde;
 
 //Стилизация главного меню
+
 .first-screen-section {
-  background: #eef0f3 url("../img/mainbg.jpg") center top;
-  background-size: cover;
+  background: url("../img/iphone6.png") center bottom no-repeat,
+          #eef0f3 url("../img/mainbg.jpg") center top;
+  background-size: auto, cover;
+  padding: 45px 0 510px 0;
 }
 
 .main-menu_item {
@@ -65,22 +68,57 @@ $dark-blue: #2046af;
 
 .button-blue:hover {
   background: $dark-blue;
-  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  box-shadow: 0 0 30px rgba(0,0,0,0.25);
 }
 
 .button-apple {
   margin-top: -10px;
 }
 
-.logo-main {
-  margin-top: 52px;
-}
 .fa-apple {
   margin-right: 14px;
   font-size: 20px;
   margin-top: -8px;
 }
 
-.main-menu-tour {
-  margin-top: 45px;
+
+
+//Стилизация заголовка, описания и ссылки на видео в главном меню
+
+.main-menu-headtext {
+  font-size: 62px;
+  text-align: center;
+  padding: 0;
+  line-height: 62px;
+  margin: 130px 0 45px 0;
+}
+
+.main-menu-descrip {
+  text-align: center;
+  width: 780px;
+  color: $grey;
+  padding: 0;
+  margin: 0 0 65px 0;
+}
+
+.watch-video-link {
+  font-size: 16px;
+  border: 1px solid $light-gray;
+  border-radius: 40px;
+  padding: 16px 50px;
+  color: black;
+  background: transparent;
+}
+
+.watch-video-link:hover {
+  background: $blue;
+  border: 1px solid $blue;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 45px rgba(0,0,0,0.25);
+}
+
+.fa-play {
+  font-size: 14px;
+  margin: 0 15px 0 0;
 }
