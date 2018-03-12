@@ -8,7 +8,10 @@
     <title>New Providence</title>
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.arcticmodal.css" type="text/css">
+    <link rel="stylesheet" href="css/simple.css" type="text/css">
     <link rel="stylesheet" href="css/main.css">
+
 
 </head>
 <body>
@@ -33,7 +36,7 @@
                             <ul class="d-flex justify-content-end">
                                 <li class="main-menu_item"><a href="#">Help</a></li>
                                 <li class="main-menu_item"><a href="#">Contacts</a></li>
-                                <li  class="button-blue button-apple"><a href="#"><i class="fab fa-apple"></i>Get App</a>
+                                <li  class="button-blue button-apple"><a href="#"><i class="fab fa-apple apple-icon-first"></i>Get App</a>
                                 </li>
                             </ul>
                         </nav>
@@ -43,7 +46,13 @@
                             <h1 class="main-menu-headtext">What happens tomorrow?</h1>
                             <p class="main-menu-descrip">The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady.
                                 His face brightened up, and he began to feel quite convivial.</p>
-                            <a href="#" class="watch-video-link"><i class="fas fa-play"></i>Watch Video</a>
+                            <button class="watch-video-link button-arctic" type="button"><i class="fas fa-play"></i>Watch Video</button>
+                            <div style="display: none;">
+                                <div class="box-modal" id="exampleModal">
+                                    <div class="box-modal_close arcticmodal-close">X</div>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7wjD2fKwPbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -51,8 +60,105 @@
         </div>
     </header>
 
-<script src="js/jquery-3.3.1.min.js"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <section class="icon-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="blue-icon lock-icon"></div>
+                    <h2 class="blue-icon_maintext">Real-time all the time</h2>
+                    <p class="blue-icon_description">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
+                    <p class="blue-icon_description">Just then her head struck against the roof of the hall: in fact she was now more than nine feet high,
+                        and she at once took up the little golden key and hurried off to the garden door.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="blue-icon clock-icon"></div>
+                    <h2 class="blue-icon_maintext">Adopt without any obstacles</h2>
+                    <p class="blue-icon_description">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
+                    <p class="blue-icon_description">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="try-to-hack">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-6">
+                    <h1 class="try-to-hack_maintext">Your day<br> is protected</h1>
+                    <p class="try-to-hack_descrip">There have not been any since we have lived here, said my mother.</p>
+                    <p class="try-to-hack_descrip try-to-hack_descrip-margin">We thought - Mr. Copperfield thought - it was quite a large rookery; but the nests were very old ones, and the birds have deserted them a long while.</p>
+                    <div>
+                        <a href="#" class="hack-button button-blue">Try to hack us <i class="fas fa-arrow-right arrow-hack-right-margin"></i></a>
+                        <a href="#" class="learn-button">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-map">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h1 class="try-to-hack_maintext">We are almost everywhere</h1>
+                    <p class="try-to-hack_descrip">Now the races of these two have been for some ages utterly extinct,
+                        and besides to discourse any further of them would not be at all to my purpose.
+                    </p>
+                    <p class="try-to-hack_descrip">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
+                    <p class="partners-style">Partners</p>
+                    <img src="img/dropbox-logo.png" alt="Dropbox" class="dropbox-logo">
+                    <img src="img/evernote-logo.png" alt="Evernote">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interface-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center interface_maintext">Beautiful Interface</h1>
+                    <p class="text-center interface_landing-screen landing-screen-margin">Landing Screen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="grey-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-column align-items-center">
+                        <p class="interface_landing-screen">NewProvidence</p>
+                        <label for="email-for" class="text-center"><h2 class="interface_main-smartphone">Get it to your smartphone </h2></label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-column align-items-center">
+                        <div>
+                            <input id="email-for" type="email" class="email-send align-self-center" placeholder="kvadrolee@mail.ru">
+                            <button class="email-send-button" type="submit">Send Invite<i class="fas fa-arrow-right input-arrow"></i></button>
+                        </div>
+                        <p class="text-center interface_landing-screen">or Download From</p>
+                        <a href="#" class="appstore_link d-flex">
+                            <i class="fab fa-apple apple-icon-second"></i>
+                            <div>
+                                <p class="appstore-text">Download on the</p>
+                                <p class="appstore-text">App Store</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.arcticmodal-0.3.min.js"></script>
 <script src="js/main.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
 </body>
 </html>

@@ -18,11 +18,26 @@ ul, li {
   margin: 0;
 }
 
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.animate {
+  transition: 0.5s ease;
+}
+
 $black: #26272d;
 $blue: #267df4;
 $grey: #8c8f94;
 $dark-blue: #2046af;
 $light-gray: #dbddde;
+$grey-back: #f5f5f8;
+$green: #6fc754;
+$activegreen: rgba(0, 133, 2, 1);
+$activegreen-two: rgb(104, 208, 37);
 
 //Стилизация главного меню
 
@@ -57,7 +72,6 @@ $light-gray: #dbddde;
 
 .button-blue {
   font-size: 16px;
-  padding: 10px 20px;
   background: $blue;
   border-radius: 60px;
   a {
@@ -69,13 +83,15 @@ $light-gray: #dbddde;
 .button-blue:hover {
   background: $dark-blue;
   box-shadow: 0 0 30px rgba(0,0,0,0.25);
+  transition: 0.45s ease;
 }
 
 .button-apple {
   margin-top: -10px;
+  padding: 10px 20px;
 }
 
-.fa-apple {
+.apple-icon-first {
   margin-right: 14px;
   font-size: 20px;
   margin-top: -8px;
@@ -107,6 +123,7 @@ $light-gray: #dbddde;
   padding: 16px 50px;
   color: black;
   background: transparent;
+  outline: none;
 }
 
 .watch-video-link:hover {
@@ -120,4 +137,277 @@ $light-gray: #dbddde;
 .fa-play {
   font-size: 14px;
   margin: 0 15px 0 0;
+}
+
+//Конец стилизации первой секциии с меню
+
+//Стилизация второй секции
+
+.icon-text {
+  padding: 123px 0 129px 0;
+  background: #fff;
+  position: relative;
+}
+
+
+.blue-icon {
+  width: 50px;
+  height: 55px;
+}
+
+.lock-icon {
+  background: url("../img/lock.png") center center no-repeat;
+  margin-left: 38px;
+}
+
+.blue-icon_maintext {
+  font-size: 26px;
+  padding: 0;
+  text-align: left;
+  margin: 40px 0 40px 40px;
+}
+
+.blue-icon_description {
+  font-size: 18px;
+  padding: 0;
+  text-align: left;
+  color: $grey;
+  width: 495px;
+  margin-left: 40px;
+  position: relative;
+}
+
+.clock-icon {
+  background: url("../img/clock.png") center center no-repeat;
+  margin-left: 38px;
+}
+
+.icon-text::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 1px;
+  background: $light-gray;
+  bottom: 1px;
+  left: 20%;
+}
+
+//Cтилизация 3 секции Try to hack ud
+
+.try-to-hack {
+  padding: 265px 0 350px 0;
+  background: #fff url("../img/iphone6-two.png") no-repeat -10% 85%;
+}
+
+.try-to-hack_maintext {
+  padding: 0;
+  font-size: 42px;
+  line-height: 50px;
+  margin: 0 0 75px 0;
+}
+
+.try-to-hack_descrip {
+  font-size: 20px;
+  line-height: 32px;
+  color: $grey;
+}
+
+.try-to-hack_descrip-margin {
+  margin: 40px 0 80px 0;
+}
+
+.hack-button {
+    color: #fff;
+    padding: 10px 17px 10px 27px;
+    text-decoration: none;
+}
+
+.hack-button:hover {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.45s ease;
+}
+
+.arrow-hack-right-margin {
+  margin: 0 0 0 45px;
+}
+
+.learn-button {
+  padding: 10px 17px;
+  background: transparent;
+  color: $grey;
+  border: 1px solid $grey;
+  border-radius: 60px;
+  font-size: 16px;
+  margin: 0 0 0 20px;
+  text-decoration: none;
+}
+
+.learn-button:hover {
+  background: $grey;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 0 30px rgba(0,0,0,0.25);
+  transition: 0.45s ease;
+}
+
+//Конец стилизации секции с телефоном
+
+//Стилизация секции с картой
+
+.section-map {
+  padding: 120px 0 220px 0;
+  background: #fff url("../img/map.png") no-repeat 110% 40%;
+}
+
+.partners-style {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $black;
+  margin: 30px 0;
+}
+
+.dropbox-logo {
+  margin-right: 30px;
+}
+
+//Конец секции с картой
+
+//Начало секции с кучей телефонов
+
+.interface-section {
+  padding: 144px 0 130px 0;
+  background: $grey-back url("../img/phones.png") no-repeat center 330px;
+}
+
+.interface_maintext {
+  font-size: 42px;
+  padding: 0;
+  margin: 0;
+  color: $black;
+  position: relative;
+}
+
+.interface_maintext:after {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 2px;
+  background: $blue;
+  top: 95px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.interface_landing-screen {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $grey;
+}
+
+.landing-screen-margin {
+  margin: 90px 0 1050px 0;
+}
+
+.interface_landing-screen + p {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $grey;
+}
+
+.interface_main-smartphone {
+  font-size: 42px;
+  padding: 0;
+  margin: 0;
+  color: $black;
+  margin: 0 0 50px 0;
+}
+
+//Стилизация input
+
+.grey-section {
+  background: $grey-back;
+  padding: 0 0 130px 0;
+}
+
+.input-arrow {
+  margin: 0 0 0 18px;
+}
+
+.email-send {
+  width: 502px;
+  padding: 17px 27px;
+  font-size: 16px;
+  color: $black;
+  border-radius: 30px;
+  border: 1px solid $light-gray;
+  outline: none;
+  position: relative;
+  margin: 0 0 68px 0;
+}
+
+.email-send-button {
+  font-size: 16px;
+  color: #fff;
+  padding: 12px 24px 12px 30px;
+  background: $green;
+  border: 1px solid $green;
+  border-radius: 30px;
+  position: absolute;
+  top: 5px;
+  left: 644px;
+}
+
+.email-send-button:hover {
+  background: $activegreen;
+  border: 1px solid $activegreen;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  @extend .animate;
+}
+
+.email-send-button:active {
+  background: $activegreen-two;
+  border: 1px solid $activegreen-two;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  @extend .animate;
+}
+
+//Стилизация кнопки AppStore
+
+.appstore_link {
+  padding: 13px 39px 13px 27px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 55px;
+  text-decoration: none;
+}
+
+.appstore_link:hover {
+  text-decoration: none;
+  background: $blue;
+  border: 1px solid $blue;
+  @extend .animate;
+  color: #fff;
+  box-shadow: 0 0 40px rgba(0,0,0,0.3);
+}
+
+.apple-icon-second {
+  font-size: 38px;
+  margin: 0 20px 0 0;
+}
+
+.appstore-text {
+  padding: 0;
+  margin: 0;
+}
+
+.appstore-text:first-child {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.appstore-text:last-child {
+  font-size: 23px;
+  line-height: 23px;
 }

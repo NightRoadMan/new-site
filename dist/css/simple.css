@@ -1,0 +1,22 @@
+.box-modal {
+	position: relative;
+	width: 580px;
+	height: 335px;
+	padding: 10px;
+	background: #fff;
+	color: #3c3c3c;
+	font: 14px/18px Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+
+	border-radius: 6px;
+}
+
+.box-modal_close {
+	position: absolute;
+	right: -20px;
+	top: 2px;
+	font-size: 18px;
+	line-height: 15px;
+	color: #fff;
+	cursor: pointer; }
+
+.box-modal_close:hover { color: #267df4; }
